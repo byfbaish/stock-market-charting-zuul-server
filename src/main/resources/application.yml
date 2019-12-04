@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl: #注册中心的注册地址
+      defaultZone: http://127.0.0.1:3001/eureka/
+
+server:
+  port: 3003
+spring:
+  application:
+    name: zuul-server
+
+# zuul:
+#   routes:
+#     company:
+#       path: /api/company/**
+#       service-id: service-company
